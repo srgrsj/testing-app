@@ -221,18 +221,12 @@ final class DishEditorViewModel: ObservableObject {
     }
 
     private func calculateDraftNutrition() -> NutritionDraft? {
-        let normalizedPortion = portionSizeText.replacingOccurrences(of: ",", with: ".")
-        guard let portionSize = Double(normalizedPortion), portionSize > 0 else {
-            return nil
-        }
-
         let productsById = Dictionary(uniqueKeysWithValues: products.map { ($0.id, $0) })
 
         var totalCalories = 0.0
         var totalProteins = 0.0
         var totalFats = 0.0
         var totalCarbs = 0.0
-        var totalWeight = 0.0
 
         for ingredient in ingredients {
             guard ingredient.quantity > 0 else { continue }
@@ -243,20 +237,17 @@ final class DishEditorViewModel: ObservableObject {
             totalProteins += product.proteins * factor
             totalFats += product.fats * factor
             totalCarbs += product.carbs * factor
-            totalWeight += ingredient.quantity
         }
 
-        guard totalWeight > 0 else {
+        guard totalCalories > 0 || totalProteins > 0 || totalFats > 0 || totalCarbs > 0 else {
             return nil
         }
 
-        let portionFactor = portionSize / totalWeight
-
         return NutritionDraft(
-            calories: totalCalories * portionFactor,
-            proteins: totalProteins * portionFactor,
-            fats: totalFats * portionFactor,
-            carbs: totalCarbs * portionFactor
+            calories: totalCalories,
+            proteins: totalProteins,
+            fats: totalFats,
+            carbs: totalCarbs
         )
     }
 

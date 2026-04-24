@@ -7,7 +7,7 @@ struct ProductEditorView: View {
     let onSaved: () async -> Void
     @State private var showingAddPhotoOptions = false
     @State private var showingGalleryPicker = false
-    @State private var pickedPhotoItem: PhotosPickerItem?
+    @State private var pickedPhotoItems: [PhotosPickerItem] = []
 
     var body: some View {
         NavigationStack {
@@ -99,15 +99,18 @@ struct ProductEditorView: View {
                     ProgressView()
                 }
             }
-            .photosPicker(isPresented: $showingGalleryPicker, selection: $pickedPhotoItem, matching: .images)
-            .onChange(of: pickedPhotoItem) { _, newValue in
-                guard let newValue else { return }
+            .photosPicker(isPresented: $showingGalleryPicker, selection: $pickedPhotoItems, maxSelectionCount: 10, matching: .images)
+            .onChange(of: pickedPhotoItems) { _, newItems in
+                guard !newItems.isEmpty else { return }
                 Task {
-                    if let data = try? await newValue.loadTransferable(type: Data.self) {
-                        let base64 = data.base64EncodedString()
-                        viewModel.addPhotoDataURL("data:image/jpeg;base64,\(base64)")
+                    for item in newItems {
+                        if let data = try? await item.loadTransferable(type: Data.self) {
+                            let base64 = data.base64EncodedString()
+                            let mimeType = item.supportedContentTypes.first?.preferredMIMEType ?? "image/jpeg"
+                            viewModel.addPhotoDataURL("data:\(mimeType);base64,\(base64)")
+                        }
                     }
-                    pickedPhotoItem = nil
+                    pickedPhotoItems.removeAll()
                 }
             }
             .navigationTitle(viewModel.title)

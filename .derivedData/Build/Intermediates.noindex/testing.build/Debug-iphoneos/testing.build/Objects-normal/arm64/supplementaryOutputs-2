@@ -1,0 +1,23 @@
+{
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Data/DTO/CatalogDTO.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogDTO.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogDTO.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogDTO.dia",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogDTO.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogDTO.swiftdeps"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Data/Network/APIClient.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/APIClient.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/APIClient.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/APIClient.dia",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/APIClient.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/APIClient.swiftdeps"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Data/Network/APIEndpoint.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/APIEndpoint.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/APIEndpoint.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/APIEndpoint.dia",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/APIEndpoint.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/APIEndpoint.swiftdeps"
+  }
+}

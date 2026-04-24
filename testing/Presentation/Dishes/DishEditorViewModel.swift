@@ -1,5 +1,6 @@
 import Foundation
 import Combine
+import SwiftUI
 
 @MainActor
 final class DishEditorViewModel: ObservableObject {
@@ -17,7 +18,7 @@ final class DishEditorViewModel: ObservableObject {
     }
 
     @Published var name: String = ""
-    @Published var photosText: String = ""
+    @Published var photos: [String] = []
     @Published var caloriesText: String = ""
     @Published var proteinsText: String = ""
     @Published var fatsText: String = ""
@@ -30,12 +31,16 @@ final class DishEditorViewModel: ObservableObject {
     @Published var products: [Product] = []
     @Published var isLoading = false
     @Published var errorMessage: String?
+    @Published var showingPhotoURLInput = false
+    @Published var photoURLInput: String = ""
 
     private let editingDish: Dish?
     private let useCases: CatalogUseCases
     private var cancellables: Set<AnyCancellable> = []
     private var isApplyingAutoNutrition = false
     private var editedNutritionFields: Set<NutritionField> = []
+    private var categorySetManually = false
+    private var isProcessingMacro = false
 
     init(editingDish: Dish?, useCases: CatalogUseCases) {
         self.editingDish = editingDish
@@ -43,7 +48,7 @@ final class DishEditorViewModel: ObservableObject {
 
         if let editingDish {
             name = editingDish.name
-            photosText = editingDish.photos.joined(separator: "\n")
+            photos = editingDish.photos
             caloriesText = String(format: "%.1f", editingDish.calories)
             proteinsText = String(format: "%.1f", editingDish.proteins)
             fatsText = String(format: "%.1f", editingDish.fats)
@@ -54,9 +59,11 @@ final class DishEditorViewModel: ObservableObject {
             ingredients = editingDish.ingredients.map {
                 IngredientDraft(productId: $0.productId, quantity: $0.quantity)
             }
+            categorySetManually = true
         }
 
         setupAutoNutritionDrafting()
+        setupNameMacroExtraction()
     }
 
     var title: String {
@@ -128,6 +135,43 @@ final class DishEditorViewModel: ObservableObject {
         }
     }
 
+    func addPhotoFromURL(_ url: String) {
+        addPhotoString(url)
+        photoURLInput = ""
+        showingPhotoURLInput = false
+    }
+
+    func addPhotoDataURL(_ dataURL: String) {
+        addPhotoString(dataURL)
+    }
+
+    private func addPhotoString(_ value: String) {
+        let trimmed = value.trimmingCharacters(in: .whitespacesAndNewlines)
+        if !trimmed.isEmpty && !photos.contains(trimmed) {
+            photos.append(trimmed)
+        }
+    }
+
+    func removePhoto(at index: Int) {
+        guard index >= 0 && index < photos.count else { return }
+        photos.remove(at: index)
+    }
+
+    func updateCategoryManually(_ newCategory: DishCategory) {
+        category = newCategory
+        categorySetManually = true
+    }
+
+    var categoryBinding: Binding<DishCategory> {
+        Binding(
+            get: { self.category },
+            set: { newValue in
+                self.category = newValue
+                self.categorySetManually = true
+            }
+        )
+    }
+
     func save() async -> Bool {
         errorMessage = nil
         isLoading = true
@@ -150,11 +194,7 @@ final class DishEditorViewModel: ObservableObject {
 
         let payload = DishUpsertPayload(
             name: name,
-            photos: photosText
-                .split(separator: "\n")
-                .map(String.init)
-                .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
-                .filter { !$0.isEmpty },
+            photos: photos,
             calories: Double(caloriesText.replacingOccurrences(of: ",", with: ".")),
             proteins: Double(proteinsText.replacingOccurrences(of: ",", with: ".")),
             fats: Double(fatsText.replacingOccurrences(of: ",", with: ".")),
@@ -197,6 +237,14 @@ final class DishEditorViewModel: ObservableObject {
         Publishers.CombineLatest($ingredients, $products)
             .sink { [weak self] _, _ in
                 self?.recalculateAvailableFlags()
+            }
+            .store(in: &cancellables)
+    }
+
+    private func setupNameMacroExtraction() {
+        $name
+            .sink { [weak self] _ in
+                self?.processDishNameMacro()
             }
             .store(in: &cancellables)
     }
@@ -253,5 +301,60 @@ final class DishEditorViewModel: ObservableObject {
 
     private func formatNutrition(_ value: Double) -> String {
         String(format: "%.1f", value)
+    }
+
+    private func processDishNameMacro() {
+        guard !isProcessingMacro else { return }
+        
+        let macroResult = extractDishMacro(from: name)
+        
+        // Только обновляем, если на самом деле что-то изменилось
+        if macroResult.cleanedName != name {
+            isProcessingMacro = true
+            name = macroResult.cleanedName
+            isProcessingMacro = false
+        }
+        
+        if let extractedCategory = macroResult.category, !categorySetManually {
+            category = extractedCategory
+        }
+    }
+
+    private func extractDishMacro(from input: String) -> (cleanedName: String, category: DishCategory?) {
+        let macroPattern = "!(десерт|первое|второе|напиток|салат|суп|перекус)"
+        guard let regex = try? NSRegularExpression(pattern: macroPattern, options: .caseInsensitive) else {
+            return (cleanedName: input, category: nil)
+        }
+
+        let range = NSRange(input.startIndex..<input.endIndex, in: input)
+        guard let match = regex.firstMatch(in: input, options: [], range: range) else {
+            return (cleanedName: input, category: nil)
+        }
+
+        guard let matchRange = Range(match.range, in: input) else {
+            return (cleanedName: input, category: nil)
+        }
+
+        let macroText = String(input[matchRange]).lowercased()
+        let category: DishCategory? = {
+            switch macroText {
+            case "!десерт": return .dessert
+            case "!первое": return .first
+            case "!второе": return .second
+            case "!напиток": return .drink
+            case "!салат": return .salad
+            case "!суп": return .soup
+            case "!перекус": return .snack
+            default: return nil
+            }
+        }()
+
+        let beforeMacro = String(input[..<matchRange.lowerBound])
+        let afterMacro = String(input[matchRange.upperBound...])
+        let cleanedName = (beforeMacro + afterMacro)
+            .replacingOccurrences(of: "\\s{2,}", with: " ", options: .regularExpression)
+            .trimmingCharacters(in: .whitespaces)
+
+        return (cleanedName: cleanedName, category: category)
     }
 }

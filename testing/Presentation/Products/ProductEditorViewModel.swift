@@ -1,10 +1,11 @@
 import Foundation
 import Combine
+import SwiftUI
 
 @MainActor
 final class ProductEditorViewModel: ObservableObject {
     @Published var name: String = ""
-    @Published var photosText: String = ""
+    @Published var photos: [String] = []
     @Published var caloriesText: String = ""
     @Published var proteinsText: String = ""
     @Published var fatsText: String = ""
@@ -15,6 +16,8 @@ final class ProductEditorViewModel: ObservableObject {
     @Published var selectedFlags: Set<FeatureFlag> = []
     @Published var isLoading = false
     @Published var errorMessage: String?
+    @Published var showingPhotoURLInput = false
+    @Published var photoURLInput: String = ""
 
     private let editingProduct: Product?
     private let useCases: CatalogUseCases
@@ -25,7 +28,7 @@ final class ProductEditorViewModel: ObservableObject {
 
         if let editingProduct {
             name = editingProduct.name
-            photosText = editingProduct.photos.joined(separator: "\n")
+            photos = editingProduct.photos
             caloriesText = String(format: "%.1f", editingProduct.calories)
             proteinsText = String(format: "%.1f", editingProduct.proteins)
             fatsText = String(format: "%.1f", editingProduct.fats)
@@ -49,17 +52,35 @@ final class ProductEditorViewModel: ObservableObject {
         }
     }
 
+    func addPhotoFromURL(_ url: String) {
+        addPhotoString(url)
+        photoURLInput = ""
+        showingPhotoURLInput = false
+    }
+
+    func addPhotoDataURL(_ dataURL: String) {
+        addPhotoString(dataURL)
+    }
+
+    private func addPhotoString(_ value: String) {
+        let trimmed = value.trimmingCharacters(in: .whitespacesAndNewlines)
+        if !trimmed.isEmpty && !photos.contains(trimmed) {
+            photos.append(trimmed)
+        }
+    }
+
+    func removePhoto(at index: Int) {
+        guard index >= 0 && index < photos.count else { return }
+        photos.remove(at: index)
+    }
+
     func save() async -> Bool {
         errorMessage = nil
         isLoading = true
 
         let payload = ProductUpsertPayload(
             name: name,
-            photos: photosText
-                .split(separator: "\n")
-                .map(String.init)
-                .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
-                .filter { !$0.isEmpty },
+            photos: photos,
             calories: Double(caloriesText.replacingOccurrences(of: ",", with: ".")),
             proteins: Double(proteinsText.replacingOccurrences(of: ",", with: ".")),
             fats: Double(fatsText.replacingOccurrences(of: ",", with: ".")),

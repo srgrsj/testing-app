@@ -1,0 +1,23 @@
+{
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Presentation/Products/ProductEditorViewModel.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductEditorViewModel.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductEditorViewModel.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductEditorViewModel.dia",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductEditorViewModel.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductEditorViewModel.swiftdeps"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Presentation/Products/ProductsListView.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductsListView.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductsListView.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductsListView.dia",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductsListView.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductsListView.swiftdeps"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Presentation/Products/ProductsListViewModel.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductsListViewModel.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductsListViewModel.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductsListViewModel.dia",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductsListViewModel.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductsListViewModel.swiftdeps"
+  }
+}

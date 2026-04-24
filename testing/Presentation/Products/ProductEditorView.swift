@@ -1,9 +1,13 @@
 import SwiftUI
+import PhotosUI
 
 struct ProductEditorView: View {
     @Environment(\.dismiss) private var dismiss
     @StateObject var viewModel: ProductEditorViewModel
     let onSaved: () async -> Void
+    @State private var showingAddPhotoOptions = false
+    @State private var showingGalleryPicker = false
+    @State private var pickedPhotoItem: PhotosPickerItem?
 
     var body: some View {
         NavigationStack {
@@ -47,11 +51,40 @@ struct ProductEditorView: View {
                 }
 
                 Section("Фото") {
-                    Text("По одному URL на строку")
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-                    TextEditor(text: $viewModel.photosText)
-                        .frame(minHeight: 120)
+                    ForEach(Array(viewModel.photos.enumerated()), id: \.offset) { index, photo in
+                        HStack {
+                            RemoteThumbnailView(urlString: photo, size: 60)
+                                .frame(width: 60, height: 60)
+                            VStack(alignment: .leading, spacing: 4) {
+                                Text(photo)
+                                    .font(.caption)
+                                    .lineLimit(2)
+                                    .foregroundStyle(.secondary)
+                            }
+                            Spacer()
+                            Button(action: { viewModel.removePhoto(at: index) }) {
+                                Image(systemName: "xmark.circle.fill")
+                                    .foregroundStyle(.red)
+                            }
+                        }
+                    }
+                    
+                    Button(action: { showingAddPhotoOptions = true }) {
+                        HStack {
+                            Image(systemName: "plus")
+                            Text("Добавить")
+                        }
+                    }
+                    .confirmationDialog("Добавить фото", isPresented: $showingAddPhotoOptions, titleVisibility: .visible) {
+                        Button("Ссылка") { viewModel.showingPhotoURLInput = true }
+                        Button("Галерея") { showingGalleryPicker = true }
+                        Button("Отмена", role: .cancel) {}
+                    }
+                    .alert("Добавить фотографию", isPresented: $viewModel.showingPhotoURLInput) {
+                        TextField("URL фотографии", text: $viewModel.photoURLInput)
+                        Button("Отмена", role: .cancel) { }
+                        Button("Добавить") { viewModel.addPhotoFromURL(viewModel.photoURLInput) }
+                    }
                 }
 
                 if let error = viewModel.errorMessage {
@@ -64,6 +97,17 @@ struct ProductEditorView: View {
             .overlay {
                 if viewModel.isLoading {
                     ProgressView()
+                }
+            }
+            .photosPicker(isPresented: $showingGalleryPicker, selection: $pickedPhotoItem, matching: .images)
+            .onChange(of: pickedPhotoItem) { _, newValue in
+                guard let newValue else { return }
+                Task {
+                    if let data = try? await newValue.loadTransferable(type: Data.self) {
+                        let base64 = data.base64EncodedString()
+                        viewModel.addPhotoDataURL("data:image/jpeg;base64,\(base64)")
+                    }
+                    pickedPhotoItem = nil
                 }
             }
             .navigationTitle(viewModel.title)

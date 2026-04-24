@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 struct RemoteThumbnailView: View {
     let urlString: String?
@@ -6,7 +7,11 @@ struct RemoteThumbnailView: View {
 
     var body: some View {
         Group {
-            if let urlString, let url = URL(string: urlString), !urlString.isEmpty {
+            if let urlString, let uiImage = Self.decodeDataURLImage(urlString) {
+                Image(uiImage: uiImage)
+                    .resizable()
+                    .scaledToFill()
+            } else if let urlString, let url = URL(string: urlString), !urlString.isEmpty {
                 AsyncImage(url: url) { phase in
                     switch phase {
                     case let .success(image):
@@ -37,6 +42,15 @@ struct RemoteThumbnailView: View {
                 .font(.title3)
                 .foregroundStyle(.secondary)
         }
+    }
+
+    private static func decodeDataURLImage(_ value: String) -> UIImage? {
+        // Expected form: "data:image/jpeg;base64,...."
+        guard value.hasPrefix("data:image/") else { return nil }
+        guard let commaIndex = value.firstIndex(of: ",") else { return nil }
+        let base64Part = String(value[value.index(after: commaIndex)...])
+        guard let data = Data(base64Encoded: base64Part, options: [.ignoreUnknownCharacters]) else { return nil }
+        return UIImage(data: data)
     }
 }
 

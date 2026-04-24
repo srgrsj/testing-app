@@ -1,0 +1,23 @@
+{
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Presentation/Dishes/DishDetailView.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishDetailView.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishDetailView.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishDetailView.dia",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishDetailView.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishDetailView.swiftdeps"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Presentation/Dishes/DishDetailViewModel.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishDetailViewModel.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishDetailViewModel.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishDetailViewModel.dia",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishDetailViewModel.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishDetailViewModel.swiftdeps"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Presentation/Dishes/DishEditorView.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishEditorView.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishEditorView.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishEditorView.dia",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishEditorView.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishEditorView.swiftdeps"
+  }
+}

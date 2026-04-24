@@ -1,0 +1,329 @@
+{
+  "" : {
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/testing-primary.dia",
+    "emit-module-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/testing-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/testing-primary-emit-module.dia",
+    "pch" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/testing-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/testing-primary.swiftdeps"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/App/AppContainer.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/AppContainer.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/AppContainer.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/AppContainer.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/AppContainer.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/AppContainer.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/AppContainer.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/AppContainer.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/AppContainer~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/ContentView.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Core/AppError.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/AppError.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/AppError.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/AppError.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/AppError.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/AppError.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/AppError.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/AppError.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/AppError~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Core/DateParsing.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DateParsing.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DateParsing.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DateParsing.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DateParsing.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DateParsing.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DateParsing.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DateParsing.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DateParsing~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Data/DTO/CatalogDTO.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogDTO.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogDTO.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogDTO.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogDTO.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogDTO.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogDTO.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogDTO.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogDTO~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Data/Network/APIClient.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/APIClient.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/APIClient.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/APIClient.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/APIClient.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/APIClient.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/APIClient.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/APIClient.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/APIClient~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Data/Network/APIEndpoint.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/APIEndpoint.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/APIEndpoint.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/APIEndpoint.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/APIEndpoint.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/APIEndpoint.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/APIEndpoint.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/APIEndpoint.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/APIEndpoint~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Data/Repositories/CatalogRepositoryImpl.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogRepositoryImpl.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogRepositoryImpl.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogRepositoryImpl.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogRepositoryImpl.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogRepositoryImpl.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogRepositoryImpl.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogRepositoryImpl.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogRepositoryImpl~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Domain/Entities/CatalogEnums.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogEnums.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogEnums.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogEnums.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogEnums.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogEnums.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogEnums.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogEnums.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogEnums~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Domain/Entities/Dish.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/Dish.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/Dish.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/Dish.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/Dish.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/Dish.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/Dish.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/Dish.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/Dish~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Domain/Entities/Product.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/Product.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/Product.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/Product.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/Product.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/Product.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/Product.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/Product.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/Product~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Domain/Entities/RequestsAndFilters.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/RequestsAndFilters.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/RequestsAndFilters.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/RequestsAndFilters.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/RequestsAndFilters.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/RequestsAndFilters.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/RequestsAndFilters.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/RequestsAndFilters.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/RequestsAndFilters~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Domain/Repositories/CatalogRepositories.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogRepositories.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogRepositories.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogRepositories.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogRepositories.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogRepositories.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogRepositories.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogRepositories.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogRepositories~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Domain/UseCases/CatalogUseCases.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogUseCases.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogUseCases.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogUseCases.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogUseCases.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogUseCases.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogUseCases.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogUseCases.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/CatalogUseCases~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Presentation/API/ApiInfoView.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ApiInfoView.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ApiInfoView.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ApiInfoView.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ApiInfoView.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ApiInfoView.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ApiInfoView.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ApiInfoView.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ApiInfoView~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Presentation/API/ApiInfoViewModel.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ApiInfoViewModel.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ApiInfoViewModel.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ApiInfoViewModel.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ApiInfoViewModel.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ApiInfoViewModel.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ApiInfoViewModel.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ApiInfoViewModel.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ApiInfoViewModel~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Presentation/Dishes/DishDetailView.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishDetailView.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishDetailView.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishDetailView.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishDetailView.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishDetailView.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishDetailView.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishDetailView.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishDetailView~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Presentation/Dishes/DishDetailViewModel.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishDetailViewModel.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishDetailViewModel.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishDetailViewModel.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishDetailViewModel.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishDetailViewModel.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishDetailViewModel.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishDetailViewModel.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishDetailViewModel~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Presentation/Dishes/DishEditorView.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishEditorView.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishEditorView.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishEditorView.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishEditorView.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishEditorView.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishEditorView.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishEditorView.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishEditorView~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Presentation/Dishes/DishEditorViewModel.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishEditorViewModel.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishEditorViewModel.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishEditorViewModel.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishEditorViewModel.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishEditorViewModel.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishEditorViewModel.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishEditorViewModel.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishEditorViewModel~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Presentation/Dishes/DishesListView.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishesListView.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishesListView.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishesListView.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishesListView.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishesListView.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishesListView.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishesListView.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishesListView~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Presentation/Dishes/DishesListViewModel.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishesListViewModel.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishesListViewModel.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishesListViewModel.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishesListViewModel.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishesListViewModel.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishesListViewModel.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishesListViewModel.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/DishesListViewModel~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Presentation/Products/ProductDetailView.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductDetailView.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductDetailView.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductDetailView.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductDetailView.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductDetailView.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductDetailView.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductDetailView.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductDetailView~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Presentation/Products/ProductDetailViewModel.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductDetailViewModel.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductDetailViewModel.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductDetailViewModel.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductDetailViewModel.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductDetailViewModel.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductDetailViewModel.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductDetailViewModel.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductDetailViewModel~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Presentation/Products/ProductEditorView.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductEditorView.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductEditorView.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductEditorView.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductEditorView.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductEditorView.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductEditorView.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductEditorView.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductEditorView~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Presentation/Products/ProductEditorViewModel.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductEditorViewModel.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductEditorViewModel.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductEditorViewModel.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductEditorViewModel.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductEditorViewModel.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductEditorViewModel.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductEditorViewModel.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductEditorViewModel~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Presentation/Products/ProductsListView.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductsListView.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductsListView.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductsListView.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductsListView.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductsListView.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductsListView.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductsListView.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductsListView~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Presentation/Products/ProductsListViewModel.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductsListViewModel.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductsListViewModel.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductsListViewModel.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductsListViewModel.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductsListViewModel.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductsListViewModel.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductsListViewModel.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/ProductsListViewModel~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Presentation/RemoteImageViews.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/RemoteImageViews.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/RemoteImageViews.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/RemoteImageViews.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/RemoteImageViews.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/RemoteImageViews.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/RemoteImageViews.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/RemoteImageViews.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/RemoteImageViews~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/Presentation/RootView.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/RootView.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/RootView.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/RootView.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/RootView.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/RootView.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/RootView.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/RootView.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/RootView~partial.swiftmodule"
+  },
+  "/Users/srgrsj/Documents/learn/testing/testing-app/testing/testing/testingApp.swift" : {
+    "const-values" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/testingApp.swiftconstvalues",
+    "dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/testingApp.d",
+    "diagnostics" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/testingApp.dia",
+    "index-unit-output-path" : "/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/testingApp.o",
+    "llvm-bc" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/testingApp.bc",
+    "object" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/testingApp.o",
+    "swift-dependencies" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/testingApp.swiftdeps",
+    "swiftmodule" : "/Users/srgrsj/Documents/learn/testing/testing-app/testing/.derivedData/Build/Intermediates.noindex/testing.build/Debug-iphoneos/testing.build/Objects-normal/arm64/testingApp~partial.swiftmodule"
+  }
+}

@@ -76,6 +76,7 @@ final class DishEditorViewModel: ObservableObject {
             if ingredients.isEmpty, let firstProduct = products.first {
                 ingredients = [IngredientDraft(productId: firstProduct.id, quantity: 100)]
             }
+            syncDerivedStateForCompositionChange()
         } catch {
             errorMessage = (error as? LocalizedError)?.errorDescription ?? error.localizedDescription
         }
@@ -250,6 +251,12 @@ final class DishEditorViewModel: ObservableObject {
     }
 
     private func recalculateAvailableFlags() {
+        if products.isEmpty {
+            // Preserve preloaded flags in edit mode until product catalog is available.
+            availableFlags = selectedFlags
+            return
+        }
+
         let allowed = computeAvailableFlags()
         availableFlags = allowed
         selectedFlags = selectedFlags.intersection(allowed)

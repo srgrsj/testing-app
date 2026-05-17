@@ -24,6 +24,7 @@ struct ApiInfoView: View {
                 }
             }
             .navigationTitle("Состояние API")
+            .accessibilityIdentifier("apiInfoScreen")
             .task {
                 if viewModel.apiInfo == nil {
                     await viewModel.load()

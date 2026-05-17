@@ -53,12 +53,15 @@ struct DishesListView: View {
                                     Label("Удалить", systemImage: "trash")
                                 }
                             }
+                            .accessibilityIdentifier("dishRow_\(dish.id)")
                         }
                     }
                 }
             }
             .navigationTitle("Блюда")
+            .accessibilityIdentifier("dishesListScreen")
             .searchable(text: $viewModel.searchText, prompt: "Поиск по названию")
+            .accessibilityIdentifier("dishesSearchField")
             .onSubmit(of: .search) {
                 Task { await viewModel.load() }
             }
@@ -69,12 +72,14 @@ struct DishesListView: View {
                     } label: {
                         Label("Фильтры", systemImage: "slider.horizontal.3")
                     }
+                    .accessibilityIdentifier("dishesFiltersButton")
 
                     Button {
                         isPresentingCreate = true
                     } label: {
                         Label("Создать", systemImage: "plus")
                     }
+                    .accessibilityIdentifier("createDishButton")
                 }
             }
             .task {
@@ -145,12 +150,14 @@ private struct DishFiltersSheet: View {
                     Button("Сброс") {
                         filters = DishListFilters()
                     }
+                    .accessibilityIdentifier("dishFiltersResetButton")
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Применить") {
                         onApply()
                         dismiss()
                     }
+                    .accessibilityIdentifier("dishFiltersApplyButton")
                 }
             }
         }

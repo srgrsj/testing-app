@@ -14,29 +14,37 @@ struct ProductEditorView: View {
             Form {
                 Section("Основное") {
                     TextField("Название", text: $viewModel.name)
+                        .accessibilityIdentifier("productNameField")
                     Picker("Категория", selection: $viewModel.category) {
                         ForEach(ProductCategory.allCases) { category in
                             Text(category.title).tag(category)
                         }
                     }
+                    .accessibilityIdentifier("productCategoryPicker")
                     Picker("Подготовка", selection: $viewModel.preparation) {
                         ForEach(PreparationStatus.allCases) { status in
                             Text(status.title).tag(status)
                         }
                     }
+                    .accessibilityIdentifier("productPreparationPicker")
                     TextField("Состав", text: $viewModel.composition, axis: .vertical)
                         .lineLimit(3 ... 8)
+                        .accessibilityIdentifier("productCompositionField")
                 }
 
                 Section("БЖУ") {
                     TextField("Калории", text: $viewModel.caloriesText)
                         .keyboardType(.decimalPad)
+                        .accessibilityIdentifier("productCaloriesField")
                     TextField("Белки", text: $viewModel.proteinsText)
                         .keyboardType(.decimalPad)
+                        .accessibilityIdentifier("productProteinsField")
                     TextField("Жиры", text: $viewModel.fatsText)
                         .keyboardType(.decimalPad)
+                        .accessibilityIdentifier("productFatsField")
                     TextField("Углеводы", text: $viewModel.carbsText)
                         .keyboardType(.decimalPad)
+                        .accessibilityIdentifier("productCarbsField")
                 }
 
                 Section("Флаги") {
@@ -75,6 +83,7 @@ struct ProductEditorView: View {
                             Text("Добавить")
                         }
                     }
+                    .accessibilityIdentifier("productAddPhotoButton")
                     .confirmationDialog("Добавить фото", isPresented: $showingAddPhotoOptions, titleVisibility: .visible) {
                         Button("Ссылка") { viewModel.showingPhotoURLInput = true }
                         Button("Галерея") { showingGalleryPicker = true }
@@ -91,6 +100,7 @@ struct ProductEditorView: View {
                     Section {
                         Text(error)
                             .foregroundStyle(.red)
+                            .accessibilityIdentifier("createProductError")
                     }
                 }
             }
@@ -114,9 +124,11 @@ struct ProductEditorView: View {
                 }
             }
             .navigationTitle(viewModel.title)
+            .accessibilityIdentifier("productEditorScreen")
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Отмена") { dismiss() }
+                        .accessibilityIdentifier("productEditorCancelButton")
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Сохранить") {
@@ -129,6 +141,7 @@ struct ProductEditorView: View {
                         }
                     }
                     .disabled(viewModel.name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
+                    .accessibilityIdentifier("productEditorSaveButton")
                 }
             }
         }

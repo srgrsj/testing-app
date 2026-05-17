@@ -14,6 +14,7 @@ struct DishEditorView: View {
             Form {
                 Section("Основное") {
                     TextField("Название", text: $viewModel.name)
+                        .accessibilityIdentifier("dishNameField")
                     Text("Подсказка: используйте !десерт, !первое, !второе, !напиток, !салат, !суп, !перекус для автоматического определения категории")
                         .font(.caption)
                         .foregroundStyle(.secondary)
@@ -22,8 +23,10 @@ struct DishEditorView: View {
                             Text(category.title).tag(category)
                         }
                     }
+                    .accessibilityIdentifier("dishCategoryPicker")
                     TextField("Размер порции", text: $viewModel.portionSizeText)
                         .keyboardType(.decimalPad)
+                        .accessibilityIdentifier("dishPortionSizeField")
                 }
 
                 Section("Ингредиенты") {
@@ -38,6 +41,7 @@ struct DishEditorView: View {
                                         Text(product.name).tag(product.id)
                                     }
                                 }
+                                .accessibilityIdentifier("dishIngredientProductPicker_\(ingredient.id)")
                                 .onChange(of: ingredient.productId) { _, _ in
                                     viewModel.syncDerivedStateForCompositionChange()
                                 }
@@ -45,6 +49,7 @@ struct DishEditorView: View {
                                 HStack {
                                     TextField("Количество (г)", value: $ingredient.quantity, format: .number)
                                         .keyboardType(.decimalPad)
+                                        .accessibilityIdentifier("dishIngredientQuantityField_\(ingredient.id)")
                                         .onChange(of: ingredient.quantity) { _, _ in
                                             viewModel.syncDerivedStateForCompositionChange()
                                         }
@@ -63,27 +68,32 @@ struct DishEditorView: View {
                         } label: {
                             Label("Добавить ингредиент", systemImage: "plus")
                         }
+                        .accessibilityIdentifier("addDishIngredientButton")
                     }
                 }
 
                 Section("БЖУ") {
                     TextField("Калории", text: $viewModel.caloriesText)
                         .keyboardType(.decimalPad)
+                        .accessibilityIdentifier("dishCaloriesField")
                         .onChange(of: viewModel.caloriesText) { _, _ in
                             viewModel.markNutritionFieldEdited(.calories)
                         }
                     TextField("Белки", text: $viewModel.proteinsText)
                         .keyboardType(.decimalPad)
+                        .accessibilityIdentifier("dishProteinsField")
                         .onChange(of: viewModel.proteinsText) { _, _ in
                             viewModel.markNutritionFieldEdited(.proteins)
                         }
                     TextField("Жиры", text: $viewModel.fatsText)
                         .keyboardType(.decimalPad)
+                        .accessibilityIdentifier("dishFatsField")
                         .onChange(of: viewModel.fatsText) { _, _ in
                             viewModel.markNutritionFieldEdited(.fats)
                         }
                     TextField("Углеводы", text: $viewModel.carbsText)
                         .keyboardType(.decimalPad)
+                        .accessibilityIdentifier("dishCarbsField")
                         .onChange(of: viewModel.carbsText) { _, _ in
                             viewModel.markNutritionFieldEdited(.carbs)
                         }
@@ -91,6 +101,7 @@ struct DishEditorView: View {
                     Button("Пересчитать автоматически") {
                         viewModel.recalculateNutritionDraft(forceOverride: true)
                     }
+                    .accessibilityIdentifier("recalculateDishNutritionButton")
                 }
 
                 Section("Флаги") {
@@ -136,6 +147,7 @@ struct DishEditorView: View {
                             Text("Добавить")
                         }
                     }
+                    .accessibilityIdentifier("addDishPhotoButton")
                     .confirmationDialog("Добавить фото", isPresented: $showingAddPhotoOptions, titleVisibility: .visible) {
                         Button("Ссылка") { viewModel.showingPhotoURLInput = true }
                         Button("Галерея") { showingGalleryPicker = true }
@@ -161,9 +173,11 @@ struct DishEditorView: View {
                 }
             }
             .navigationTitle(viewModel.title)
+            .accessibilityIdentifier("dishEditorScreen")
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Отмена") { dismiss() }
+                        .accessibilityIdentifier("dishEditorCancelButton")
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Сохранить") {
@@ -176,6 +190,7 @@ struct DishEditorView: View {
                         }
                     }
                     .disabled(viewModel.name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
+                    .accessibilityIdentifier("dishEditorSaveButton")
                 }
             }
             .task {

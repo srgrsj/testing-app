@@ -9,16 +9,20 @@ struct RootView: View {
                 .tabItem {
                     Label("Продукты", systemImage: "shippingbox")
                 }
+                .accessibilityIdentifier("productsTab")
 
             DishesListView(viewModel: DishesListViewModel(useCases: container.useCases))
                 .tabItem {
                     Label("Блюда", systemImage: "fork.knife")
                 }
+                .accessibilityIdentifier("dishesTab")
 
             ApiInfoView(viewModel: ApiInfoViewModel(useCase: container.useCases.apiInfo))
                 .tabItem {
                     Label("API", systemImage: "network")
                 }
+                .accessibilityIdentifier("apiInfoTab")
         }
+        .accessibilityIdentifier("rootTabView")
     }
 }

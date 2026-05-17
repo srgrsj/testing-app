@@ -60,12 +60,14 @@ struct ProductDetailView: View {
             }
         }
         .navigationTitle("Карточка")
+        .accessibilityIdentifier("productDetailScreen")
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
                 if viewModel.product != nil {
                     Button("Изменить") {
                         isEditing = true
                     }
+                    .accessibilityIdentifier("editProductButton")
                 }
             }
         }

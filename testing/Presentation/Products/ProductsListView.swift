@@ -53,12 +53,15 @@ struct ProductsListView: View {
                                     Label("Удалить", systemImage: "trash")
                                 }
                             }
+                            .accessibilityIdentifier("productRow_\(product.id)")
                         }
                     }
                 }
             }
             .navigationTitle("Продукты")
+            .accessibilityIdentifier("productsListScreen")
             .searchable(text: $viewModel.searchText, prompt: "Поиск по названию")
+            .accessibilityIdentifier("productsSearchField")
             .onSubmit(of: .search) {
                 Task { await viewModel.load() }
             }
@@ -69,12 +72,14 @@ struct ProductsListView: View {
                     } label: {
                         Label("Фильтры", systemImage: "slider.horizontal.3")
                     }
+                    .accessibilityIdentifier("productsFiltersButton")
 
                     Button {
                         isPresentingCreate = true
                     } label: {
                         Label("Создать", systemImage: "plus")
                     }
+                    .accessibilityIdentifier("createProductButton")
                 }
             }
             .task {
@@ -167,12 +172,14 @@ private struct ProductFiltersSheet: View {
                     Button("Сброс") {
                         filters = ProductListFilters()
                     }
+                    .accessibilityIdentifier("productFiltersResetButton")
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Применить") {
                         onApply()
                         dismiss()
                     }
+                    .accessibilityIdentifier("productFiltersApplyButton")
                 }
             }
         }

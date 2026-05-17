@@ -68,12 +68,14 @@ struct DishDetailView: View {
             }
         }
         .navigationTitle("Карточка")
+        .accessibilityIdentifier("dishDetailScreen")
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
                 if viewModel.dish != nil {
                     Button("Изменить") {
                         isEditing = true
                     }
+                    .accessibilityIdentifier("editDishButton")
                 }
             }
         }

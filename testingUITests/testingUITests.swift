@@ -145,6 +145,9 @@ final class testingUITests: XCTestCase {
 
         XCTAssertTrue(app.staticTexts[dishName].waitForExistence(timeout: 10))
         XCTAssertFalse(app.staticTexts["!суп \(dishName)"].exists)
+
+        openDishDetails(named: dishName)
+        XCTAssertTrue(staticTextContaining("Суп").waitForExistence(timeout: 10))
     }
 
     // Проверяет ошибку на недопустимой границе количества ингредиента: 0 г.
@@ -223,6 +226,32 @@ final class testingUITests: XCTestCase {
         app.buttons["dishFiltersApplyButton"].tap()
 
         XCTAssertTrue(app.buttons["createDishButton"].waitForExistence(timeout: 10))
+    }
+
+    // Проверяет, что продукт, который используется в блюде, нельзя удалить.
+    func testDeletingProductUsedInDishShowsError() throws {
+        let productName = uniqueName("DeleteConflictProduct")
+        let dishName = uniqueName("ConflictDish")
+        createProduct(name: productName, calories: "100", proteins: "10", fats: "5", carbs: "15")
+        openDishesTab()
+
+        openDishEditor()
+        typeText(dishName, into: app.textFields["dishNameField"])
+        selectFirstIngredientProduct(named: productName)
+        replaceText(in: firstIngredientQuantityField(), with: "100")
+        app.buttons["dishEditorSaveButton"].tap()
+        XCTAssertTrue(app.staticTexts[dishName].waitForExistence(timeout: 10))
+
+        openProductsTab()
+        let productTitle = app.staticTexts[productName]
+        scrollToElement(productTitle, maxSwipes: 10)
+        XCTAssertTrue(productTitle.exists)
+        productTitle.swipeLeft()
+        app.buttons["Удалить"].tap()
+
+        XCTAssertTrue(app.alerts["Ошибка"].waitForExistence(timeout: 10))
+        app.alerts["Ошибка"].buttons["OK"].tap()
+        XCTAssertTrue(app.staticTexts[productName].waitForExistence(timeout: 10))
     }
 
     // Проверяет успешное редактирование блюда с валидными значениями из эквивалентного класса корректных данных.
@@ -320,6 +349,21 @@ final class testingUITests: XCTestCase {
         let field = app.textFields.matching(predicate).element(boundBy: 0)
         XCTAssertTrue(field.waitForExistence(timeout: 10))
         return field
+    }
+
+    private func selectFirstIngredientProduct(named productName: String) {
+        let predicate = NSPredicate(format: "identifier BEGINSWITH %@", "dishIngredientProductPicker_")
+        let picker = app.buttons.matching(predicate).firstMatch
+        XCTAssertTrue(picker.waitForExistence(timeout: 10))
+
+        if app.staticTexts[productName].exists {
+            return
+        }
+
+        picker.tap()
+        let productOption = app.staticTexts[productName]
+        XCTAssertTrue(productOption.waitForExistence(timeout: 10))
+        productOption.tap()
     }
 
     private func typeText(_ text: String, into field: XCUIElement) {
